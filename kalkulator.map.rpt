@@ -1,0 +1,340 @@
+Analysis & Synthesis report for kalkulator
+Sun Nov 12 00:35:56 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |kalkulator|fsm:TOFSM|cState
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 12 00:35:56 2023        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; kalkulator                                   ;
+; Top-level Entity Name              ; kalkulator                                   ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 60                                           ;
+;     Total combinational functions  ; 60                                           ;
+;     Dedicated logic registers      ; 19                                           ;
+; Total registers                    ; 19                                           ;
+; Total pins                         ; 15                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20AF484A7      ;                    ;
+; Top-level entity name                                                      ; kalkulator         ; kalkulator         ;
+; Family name                                                                ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 10     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                    ;
++----------------------------------+-----------------+-----------------+------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path       ;
++----------------------------------+-----------------+-----------------+------------------------------------+
+; kalkulator.vhd                   ; yes             ; User VHDL File  ; D:/SISDIG/Prak 4/4D/kalkulator.vhd ;
+; mux.vhd                          ; yes             ; User VHDL File  ; D:/SISDIG/Prak 4/4D/mux.vhd        ;
+; comparator.vhd                   ; yes             ; User VHDL File  ; D:/SISDIG/Prak 4/4D/comparator.vhd ;
+; register.vhd                     ; yes             ; User VHDL File  ; D:/SISDIG/Prak 4/4D/register.vhd   ;
+; subtractor.vhd                   ; yes             ; User VHDL File  ; D:/SISDIG/Prak 4/4D/subtractor.vhd ;
+; fsm.vhd                          ; yes             ; User VHDL File  ; D:/SISDIG/Prak 4/4D/fsm.vhd        ;
++----------------------------------+-----------------+-----------------+------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 60    ;
+;                                             ;       ;
+; Total combinational functions               ; 60    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 28    ;
+;     -- <=2 input functions                  ; 9     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 54    ;
+;     -- arithmetic mode                      ; 6     ;
+;                                             ;       ;
+; Total registers                             ; 19    ;
+;     -- Dedicated logic registers            ; 19    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 15    ;
+; Maximum fan-out node                        ; rst   ;
+; Maximum fan-out                             ; 29    ;
+; Total fan-out                               ; 266   ;
+; Average fan-out                             ; 2.83  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                   ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
+; |kalkulator                ; 60 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |kalkulator                   ; work         ;
+;    |comparator:U_COMP|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|comparator:U_COMP ; work         ;
+;    |fsm:TOFSM|             ; 27 (27)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|fsm:TOFSM         ;              ;
+;    |mux:X_MUX|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|mux:X_MUX         ;              ;
+;    |mux:Y_MUX|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|mux:Y_MUX         ; work         ;
+;    |regis:OUT_REG|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|regis:OUT_REG     ; work         ;
+;    |regis:X_REG|           ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|regis:X_REG       ;              ;
+;    |regis:Y_REG|           ; 2 (2)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|regis:Y_REG       ; work         ;
+;    |subtractor:X_SUB|      ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |kalkulator|subtractor:X_SUB  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |kalkulator|fsm:TOFSM|cState                                                      ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+; Name        ; cState.s5 ; cState.s4 ; cState.s3 ; cState.s2 ; cState.s1 ; cState.s0 ; cState.init ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+; cState.init ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0           ;
+; cState.s0   ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 1           ;
+; cState.s1   ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 1           ;
+; cState.s2   ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 1           ;
+; cState.s3   ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 1           ;
+; cState.s4   ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 1           ;
+; cState.s5   ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1           ;
++-------------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                  ;
++-----------------------------------------------------+-----------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal   ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------+------------------------+
+; fsm:TOFSM|enable                                    ; fsm:TOFSM|enable      ; yes                    ;
+; fsm:TOFSM|ysel                                      ; fsm:TOFSM|enable      ; yes                    ;
+; fsm:TOFSM|yld                                       ; fsm:TOFSM|cState.init ; yes                    ;
+; fsm:TOFSM|xsel                                      ; fsm:TOFSM|enable      ; yes                    ;
+; fsm:TOFSM|xld                                       ; fsm:TOFSM|cState.init ; yes                    ;
+; fsm:TOFSM|nState.s4_192                             ; GND                   ; yes                    ;
+; fsm:TOFSM|nState.init_254                           ; fsm:TOFSM|Selector17  ; yes                    ;
+; fsm:TOFSM|nState.s2_215                             ; fsm:TOFSM|Selector17  ; yes                    ;
+; fsm:TOFSM|nState.s5_182                             ; GND                   ; yes                    ;
+; fsm:TOFSM|nState.s1_228                             ; fsm:TOFSM|Selector17  ; yes                    ;
+; fsm:TOFSM|nState.s3_202                             ; GND                   ; yes                    ;
+; fsm:TOFSM|nState.s0_241                             ; fsm:TOFSM|Selector17  ; yes                    ;
+; Number of user-specified and inferred latches = 12  ;                       ;                        ;
++-----------------------------------------------------+-----------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 19    ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |kalkulator|regis:X_REG|output[0]    ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |kalkulator|regis:Y_REG|output[3]    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |kalkulator|subtractor:X_SUB|xout[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |kalkulator|fsm:TOFSM|nState.s4      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Nov 12 00:35:54 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off kalkulator -c kalkulator
+Info: Found 2 design units, including 1 entities, in source file kalkulator.vhd
+    Info: Found design unit 1: kalkulator-kalkulator_arc
+    Info: Found entity 1: kalkulator
+Warning: Entity "mux" obtained from "D:/SISDIG/Prak 4/4D/mux.vhd" instead of from Quartus II megafunction library
+Info: Found 2 design units, including 1 entities, in source file mux.vhd
+    Info: Found design unit 1: mux-mux_arc
+    Info: Found entity 1: mux
+Info: Found 2 design units, including 1 entities, in source file comparator.vhd
+    Info: Found design unit 1: comparator-comparator_arc
+    Info: Found entity 1: comparator
+Info: Found 2 design units, including 1 entities, in source file register.vhd
+    Info: Found design unit 1: regis-regis_arc
+    Info: Found entity 1: regis
+Info: Found 2 design units, including 1 entities, in source file subtractor.vhd
+    Info: Found design unit 1: subtractor-subtractor_arc
+    Info: Found entity 1: subtractor
+Info: Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info: Found design unit 1: fsm-fsm_arc
+    Info: Found entity 1: fsm
+Info: Elaborating entity "kalkulator" for the top level hierarchy
+Info: Elaborating entity "fsm" for hierarchy "fsm:TOFSM"
+Warning (10631): VHDL Process Statement warning at fsm.vhd(24): inferring latch(es) for signal or variable "nState", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(24): inferring latch(es) for signal or variable "enable", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(24): inferring latch(es) for signal or variable "xsel", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(24): inferring latch(es) for signal or variable "ysel", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(24): inferring latch(es) for signal or variable "xld", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(24): inferring latch(es) for signal or variable "yld", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "yld" at fsm.vhd(24)
+Info (10041): Inferred latch for "xld" at fsm.vhd(24)
+Info (10041): Inferred latch for "ysel" at fsm.vhd(24)
+Info (10041): Inferred latch for "xsel" at fsm.vhd(24)
+Info (10041): Inferred latch for "enable" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.s5" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.s4" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.s3" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.s2" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.s1" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.s0" at fsm.vhd(24)
+Info (10041): Inferred latch for "nState.init" at fsm.vhd(24)
+Info: Elaborating entity "mux" for hierarchy "mux:X_MUX"
+Info: Elaborating entity "regis" for hierarchy "regis:X_REG"
+Info: Elaborating entity "comparator" for hierarchy "comparator:U_COMP"
+Info: Elaborating entity "subtractor" for hierarchy "subtractor:X_SUB"
+Info: Implemented 85 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 4 output pins
+    Info: Implemented 70 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 243 megabytes
+    Info: Processing ended: Sun Nov 12 00:35:56 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+

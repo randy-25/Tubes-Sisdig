@@ -1,0 +1,302 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+989
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mux
+# storage
+db|kalkulator.(2).cnf
+db|kalkulator.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux.vhd
+f9e87ac2a32fd1f948cceb9547b1c7db
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(load)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mux:X_MUX
+mux:Y_MUX
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+regis
+# storage
+db|kalkulator.(3).cnf
+db|kalkulator.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+register.vhd
+339ba31c39ceb28c06f17387fe5853
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regis:X_REG
+regis:Y_REG
+regis:OUT_REG
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+comparator
+# storage
+db|kalkulator.(4).cnf
+db|kalkulator.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+comparator.vhd
+74509411d275d1e61f7d319d497d14c6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(y)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+comparator:U_COMP
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+subtractor
+# storage
+db|kalkulator.(5).cnf
+db|kalkulator.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+subtractor.vhd
+9e8ae1ecfc57678d4f565f709eeb67
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(cmd)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(y)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(xout)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(yout)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+subtractor:X_SUB
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+kalkulator
+# storage
+db|kalkulator.(0).cnf
+db|kalkulator.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator.vhd
+7af47fdd6dafa822577dd81cbbde94c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+mux.vhd
+f9e87ac2a32fd1f948cceb9547b1c7db
+register.vhd
+339ba31c39ceb28c06f17387fe5853
+comparator.vhd
+74509411d275d1e61f7d319d497d14c6
+fsm.vhd
+34535f73322b1af45958f4113cc69955
+subtractor.vhd
+9e8ae1ecfc57678d4f565f709eeb67
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+fsm
+# storage
+db|kalkulator.(1).cnf
+db|kalkulator.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm.vhd
+34535f73322b1af45958f4113cc69955
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(comparison)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+fsm:TOFSM
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

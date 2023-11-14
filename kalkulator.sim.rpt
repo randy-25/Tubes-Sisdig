@@ -1,0 +1,379 @@
+Simulator report for kalkulator
+Sun Nov 12 00:38:08 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 191 nodes    ;
+; Simulation Coverage         ;      71.20 % ;
+; Total Number of Transitions ; 5959         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      71.20 % ;
+; Total nodes checked                                 ; 191          ;
+; Total output ports checked                          ; 191          ;
+; Total output ports with complete 1/0-value coverage ; 136          ;
+; Total output ports with no 1/0-value coverage       ; 25           ;
+; Total output ports with no 1-value coverage         ; 44           ;
+; Total output ports with no 0-value coverage         ; 36           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |kalkulator|clk                            ; |kalkulator|clk                            ; out              ;
+; |kalkulator|subtractor:X_SUB|xout~0        ; |kalkulator|subtractor:X_SUB|xout~0        ; out              ;
+; |kalkulator|subtractor:X_SUB|xout~1        ; |kalkulator|subtractor:X_SUB|xout~1        ; out              ;
+; |kalkulator|subtractor:X_SUB|xout~2        ; |kalkulator|subtractor:X_SUB|xout~2        ; out              ;
+; |kalkulator|subtractor:X_SUB|xout~3        ; |kalkulator|subtractor:X_SUB|xout~3        ; out              ;
+; |kalkulator|subtractor:X_SUB|xout[3]       ; |kalkulator|subtractor:X_SUB|xout[3]       ; out              ;
+; |kalkulator|subtractor:X_SUB|xout[2]       ; |kalkulator|subtractor:X_SUB|xout[2]       ; out              ;
+; |kalkulator|subtractor:X_SUB|xout[1]       ; |kalkulator|subtractor:X_SUB|xout[1]       ; out              ;
+; |kalkulator|subtractor:X_SUB|xout[0]       ; |kalkulator|subtractor:X_SUB|xout[0]       ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~0        ; |kalkulator|subtractor:X_SUB|yout~0        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~1        ; |kalkulator|subtractor:X_SUB|yout~1        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~2        ; |kalkulator|subtractor:X_SUB|yout~2        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~3        ; |kalkulator|subtractor:X_SUB|yout~3        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~4        ; |kalkulator|subtractor:X_SUB|yout~4        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~5        ; |kalkulator|subtractor:X_SUB|yout~5        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~6        ; |kalkulator|subtractor:X_SUB|yout~6        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout~7        ; |kalkulator|subtractor:X_SUB|yout~7        ; out              ;
+; |kalkulator|subtractor:X_SUB|yout[3]       ; |kalkulator|subtractor:X_SUB|yout[3]       ; out              ;
+; |kalkulator|subtractor:X_SUB|yout[2]       ; |kalkulator|subtractor:X_SUB|yout[2]       ; out              ;
+; |kalkulator|subtractor:X_SUB|yout[1]       ; |kalkulator|subtractor:X_SUB|yout[1]       ; out              ;
+; |kalkulator|subtractor:X_SUB|yout[0]       ; |kalkulator|subtractor:X_SUB|yout[0]       ; out              ;
+; |kalkulator|comparator:U_COMP|output~0     ; |kalkulator|comparator:U_COMP|output~0     ; out              ;
+; |kalkulator|comparator:U_COMP|output[1]    ; |kalkulator|comparator:U_COMP|output[1]    ; out              ;
+; |kalkulator|comparator:U_COMP|output[0]    ; |kalkulator|comparator:U_COMP|output[0]    ; out              ;
+; |kalkulator|regis:Y_REG|output[0]          ; |kalkulator|regis:Y_REG|output[0]          ; regout           ;
+; |kalkulator|regis:X_REG|output[3]          ; |kalkulator|regis:X_REG|output[3]          ; regout           ;
+; |kalkulator|regis:X_REG|output[2]          ; |kalkulator|regis:X_REG|output[2]          ; regout           ;
+; |kalkulator|regis:X_REG|output[1]          ; |kalkulator|regis:X_REG|output[1]          ; regout           ;
+; |kalkulator|regis:X_REG|output[0]          ; |kalkulator|regis:X_REG|output[0]          ; regout           ;
+; |kalkulator|mux:Y_MUX|output~3             ; |kalkulator|mux:Y_MUX|output~3             ; out              ;
+; |kalkulator|mux:Y_MUX|output[0]            ; |kalkulator|mux:Y_MUX|output[0]            ; out              ;
+; |kalkulator|mux:X_MUX|output~0             ; |kalkulator|mux:X_MUX|output~0             ; out              ;
+; |kalkulator|mux:X_MUX|output~1             ; |kalkulator|mux:X_MUX|output~1             ; out              ;
+; |kalkulator|mux:X_MUX|output~2             ; |kalkulator|mux:X_MUX|output~2             ; out              ;
+; |kalkulator|mux:X_MUX|output~3             ; |kalkulator|mux:X_MUX|output~3             ; out              ;
+; |kalkulator|mux:X_MUX|output[3]            ; |kalkulator|mux:X_MUX|output[3]            ; out              ;
+; |kalkulator|mux:X_MUX|output[2]            ; |kalkulator|mux:X_MUX|output[2]            ; out              ;
+; |kalkulator|mux:X_MUX|output[1]            ; |kalkulator|mux:X_MUX|output[1]            ; out              ;
+; |kalkulator|mux:X_MUX|output[0]            ; |kalkulator|mux:X_MUX|output[0]            ; out              ;
+; |kalkulator|fsm:TOFSM|cState.s0            ; |kalkulator|fsm:TOFSM|cState.s0            ; regout           ;
+; |kalkulator|fsm:TOFSM|cState.s1            ; |kalkulator|fsm:TOFSM|cState.s1            ; regout           ;
+; |kalkulator|fsm:TOFSM|cState.s2            ; |kalkulator|fsm:TOFSM|cState.s2            ; regout           ;
+; |kalkulator|fsm:TOFSM|cState.s3            ; |kalkulator|fsm:TOFSM|cState.s3            ; regout           ;
+; |kalkulator|fsm:TOFSM|cState.s4            ; |kalkulator|fsm:TOFSM|cState.s4            ; regout           ;
+; |kalkulator|fsm:TOFSM|yld                  ; |kalkulator|fsm:TOFSM|yld                  ; out              ;
+; |kalkulator|fsm:TOFSM|nState.s3~0          ; |kalkulator|fsm:TOFSM|nState.s3~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s3~1          ; |kalkulator|fsm:TOFSM|nState.s3~1          ; out0             ;
+; |kalkulator|fsm:TOFSM|ysel                 ; |kalkulator|fsm:TOFSM|ysel                 ; out              ;
+; |kalkulator|fsm:TOFSM|WideOr3              ; |kalkulator|fsm:TOFSM|WideOr3              ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s4~0          ; |kalkulator|fsm:TOFSM|nState.s4~0          ; out              ;
+; |kalkulator|fsm:TOFSM|enable~0             ; |kalkulator|fsm:TOFSM|enable~0             ; out0             ;
+; |kalkulator|fsm:TOFSM|xsel~0               ; |kalkulator|fsm:TOFSM|xsel~0               ; out0             ;
+; |kalkulator|fsm:TOFSM|ysel~0               ; |kalkulator|fsm:TOFSM|ysel~0               ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr8              ; |kalkulator|fsm:TOFSM|WideOr8              ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr10             ; |kalkulator|fsm:TOFSM|WideOr10             ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s3_202        ; |kalkulator|fsm:TOFSM|nState.s3_202        ; out              ;
+; |kalkulator|fsm:TOFSM|comb~0               ; |kalkulator|fsm:TOFSM|comb~0               ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s4_192        ; |kalkulator|fsm:TOFSM|nState.s4_192        ; out              ;
+; |kalkulator|fsm:TOFSM|xsel                 ; |kalkulator|fsm:TOFSM|xsel                 ; out              ;
+; |kalkulator|fsm:TOFSM|enable               ; |kalkulator|fsm:TOFSM|enable               ; out              ;
+; |kalkulator|fsm:TOFSM|comb~1               ; |kalkulator|fsm:TOFSM|comb~1               ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s5~0          ; |kalkulator|fsm:TOFSM|nState.s5~0          ; out              ;
+; |kalkulator|fsm:TOFSM|nState.s5~1          ; |kalkulator|fsm:TOFSM|nState.s5~1          ; out              ;
+; |kalkulator|fsm:TOFSM|comb~2               ; |kalkulator|fsm:TOFSM|comb~2               ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s4~1          ; |kalkulator|fsm:TOFSM|nState.s4~1          ; out              ;
+; |kalkulator|fsm:TOFSM|comb~3               ; |kalkulator|fsm:TOFSM|comb~3               ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s3~2          ; |kalkulator|fsm:TOFSM|nState.s3~2          ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s3~3          ; |kalkulator|fsm:TOFSM|nState.s3~3          ; out              ;
+; |kalkulator|fsm:TOFSM|nState.s2_215        ; |kalkulator|fsm:TOFSM|nState.s2_215        ; out              ;
+; |kalkulator|fsm:TOFSM|nState.s1_228        ; |kalkulator|fsm:TOFSM|nState.s1_228        ; out              ;
+; |kalkulator|fsm:TOFSM|nState.s0_241        ; |kalkulator|fsm:TOFSM|nState.s0_241        ; out              ;
+; |kalkulator|fsm:TOFSM|comb~4               ; |kalkulator|fsm:TOFSM|comb~4               ; out0             ;
+; |kalkulator|fsm:TOFSM|nState.s5_182        ; |kalkulator|fsm:TOFSM|nState.s5_182        ; out              ;
+; |kalkulator|fsm:TOFSM|comb~5               ; |kalkulator|fsm:TOFSM|comb~5               ; out0             ;
+; |kalkulator|fsm:TOFSM|xld                  ; |kalkulator|fsm:TOFSM|xld                  ; out              ;
+; |kalkulator|fsm:TOFSM|cState~0             ; |kalkulator|fsm:TOFSM|cState~0             ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.s0~0          ; |kalkulator|fsm:TOFSM|cState.s0~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr4~0            ; |kalkulator|fsm:TOFSM|WideOr4~0            ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.s1~0          ; |kalkulator|fsm:TOFSM|cState.s1~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr3~0            ; |kalkulator|fsm:TOFSM|WideOr3~0            ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.s2~0          ; |kalkulator|fsm:TOFSM|cState.s2~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|enable~4             ; |kalkulator|fsm:TOFSM|enable~4             ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.s3~0          ; |kalkulator|fsm:TOFSM|cState.s3~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr3~1            ; |kalkulator|fsm:TOFSM|WideOr3~1            ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.s4~0          ; |kalkulator|fsm:TOFSM|cState.s4~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|xsel~2               ; |kalkulator|fsm:TOFSM|xsel~2               ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.s5~0          ; |kalkulator|fsm:TOFSM|cState.s5~0          ; out0             ;
+; |kalkulator|fsm:TOFSM|cState~5             ; |kalkulator|fsm:TOFSM|cState~5             ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector11~0         ; |kalkulator|fsm:TOFSM|Selector11~0         ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector13~0         ; |kalkulator|fsm:TOFSM|Selector13~0         ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector14~0         ; |kalkulator|fsm:TOFSM|Selector14~0         ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector15~0         ; |kalkulator|fsm:TOFSM|Selector15~0         ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector17~0         ; |kalkulator|fsm:TOFSM|Selector17~0         ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~0  ; |kalkulator|comparator:U_COMP|LessThan0~0  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~3  ; |kalkulator|comparator:U_COMP|LessThan0~3  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~7  ; |kalkulator|comparator:U_COMP|LessThan0~7  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~9  ; |kalkulator|comparator:U_COMP|LessThan0~9  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~10 ; |kalkulator|comparator:U_COMP|LessThan0~10 ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~11 ; |kalkulator|comparator:U_COMP|LessThan0~11 ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~0  ; |kalkulator|comparator:U_COMP|LessThan1~0  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~1  ; |kalkulator|comparator:U_COMP|LessThan1~1  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~2  ; |kalkulator|comparator:U_COMP|LessThan1~2  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~3  ; |kalkulator|comparator:U_COMP|LessThan1~3  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~5  ; |kalkulator|comparator:U_COMP|LessThan1~5  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~6  ; |kalkulator|comparator:U_COMP|LessThan1~6  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~7  ; |kalkulator|comparator:U_COMP|LessThan1~7  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~8  ; |kalkulator|comparator:U_COMP|LessThan1~8  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~10 ; |kalkulator|comparator:U_COMP|LessThan1~10 ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~11 ; |kalkulator|comparator:U_COMP|LessThan1~11 ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~12 ; |kalkulator|comparator:U_COMP|LessThan1~12 ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~0        ; |kalkulator|subtractor:X_SUB|Add0~0        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~1        ; |kalkulator|subtractor:X_SUB|Add0~1        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~2        ; |kalkulator|subtractor:X_SUB|Add0~2        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~3        ; |kalkulator|subtractor:X_SUB|Add0~3        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~4        ; |kalkulator|subtractor:X_SUB|Add0~4        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~5        ; |kalkulator|subtractor:X_SUB|Add0~5        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~8        ; |kalkulator|subtractor:X_SUB|Add0~8        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~9        ; |kalkulator|subtractor:X_SUB|Add0~9        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~10       ; |kalkulator|subtractor:X_SUB|Add0~10       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~13       ; |kalkulator|subtractor:X_SUB|Add0~13       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~0        ; |kalkulator|subtractor:X_SUB|Add1~0        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~1        ; |kalkulator|subtractor:X_SUB|Add1~1        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~2        ; |kalkulator|subtractor:X_SUB|Add1~2        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~3        ; |kalkulator|subtractor:X_SUB|Add1~3        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~5        ; |kalkulator|subtractor:X_SUB|Add1~5        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~6        ; |kalkulator|subtractor:X_SUB|Add1~6        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~7        ; |kalkulator|subtractor:X_SUB|Add1~7        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~8        ; |kalkulator|subtractor:X_SUB|Add1~8        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~11       ; |kalkulator|subtractor:X_SUB|Add1~11       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~12       ; |kalkulator|subtractor:X_SUB|Add1~12       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~13       ; |kalkulator|subtractor:X_SUB|Add1~13       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Equal1~0      ; |kalkulator|subtractor:X_SUB|Equal1~0      ; out0             ;
+; |kalkulator|subtractor:X_SUB|Equal2~0      ; |kalkulator|subtractor:X_SUB|Equal2~0      ; out0             ;
+; |kalkulator|fsm:TOFSM|Equal0~0             ; |kalkulator|fsm:TOFSM|Equal0~0             ; out0             ;
+; |kalkulator|fsm:TOFSM|Equal1~0             ; |kalkulator|fsm:TOFSM|Equal1~0             ; out0             ;
+; |kalkulator|fsm:TOFSM|Equal2~0             ; |kalkulator|fsm:TOFSM|Equal2~0             ; out0             ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |kalkulator|rst                            ; |kalkulator|rst                            ; out              ;
+; |kalkulator|go_i                           ; |kalkulator|go_i                           ; out              ;
+; |kalkulator|x_i[0]                         ; |kalkulator|x_i[0]                         ; out              ;
+; |kalkulator|x_i[1]                         ; |kalkulator|x_i[1]                         ; out              ;
+; |kalkulator|x_i[2]                         ; |kalkulator|x_i[2]                         ; out              ;
+; |kalkulator|x_i[3]                         ; |kalkulator|x_i[3]                         ; out              ;
+; |kalkulator|y_i[0]                         ; |kalkulator|y_i[0]                         ; out              ;
+; |kalkulator|y_i[1]                         ; |kalkulator|y_i[1]                         ; out              ;
+; |kalkulator|y_i[2]                         ; |kalkulator|y_i[2]                         ; out              ;
+; |kalkulator|y_i[3]                         ; |kalkulator|y_i[3]                         ; out              ;
+; |kalkulator|d_o[1]                         ; |kalkulator|d_o[1]                         ; pin_out          ;
+; |kalkulator|d_o[2]                         ; |kalkulator|d_o[2]                         ; pin_out          ;
+; |kalkulator|d_o[3]                         ; |kalkulator|d_o[3]                         ; pin_out          ;
+; |kalkulator|regis:OUT_REG|output[3]        ; |kalkulator|regis:OUT_REG|output[3]        ; regout           ;
+; |kalkulator|regis:OUT_REG|output[2]        ; |kalkulator|regis:OUT_REG|output[2]        ; regout           ;
+; |kalkulator|regis:OUT_REG|output[1]        ; |kalkulator|regis:OUT_REG|output[1]        ; regout           ;
+; |kalkulator|subtractor:X_SUB|process_0~0   ; |kalkulator|subtractor:X_SUB|process_0~0   ; out0             ;
+; |kalkulator|regis:Y_REG|output[3]          ; |kalkulator|regis:Y_REG|output[3]          ; regout           ;
+; |kalkulator|mux:Y_MUX|output~0             ; |kalkulator|mux:Y_MUX|output~0             ; out              ;
+; |kalkulator|mux:Y_MUX|output[3]            ; |kalkulator|mux:Y_MUX|output[3]            ; out              ;
+; |kalkulator|fsm:TOFSM|cState.init          ; |kalkulator|fsm:TOFSM|cState.init          ; regout           ;
+; |kalkulator|fsm:TOFSM|cState.s5            ; |kalkulator|fsm:TOFSM|cState.s5            ; regout           ;
+; |kalkulator|fsm:TOFSM|nState.init_254      ; |kalkulator|fsm:TOFSM|nState.init_254      ; out              ;
+; |kalkulator|fsm:TOFSM|cState~1             ; |kalkulator|fsm:TOFSM|cState~1             ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.init~0        ; |kalkulator|fsm:TOFSM|cState.init~0        ; out0             ;
+; |kalkulator|fsm:TOFSM|enable~2             ; |kalkulator|fsm:TOFSM|enable~2             ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr3~2            ; |kalkulator|fsm:TOFSM|WideOr3~2            ; out0             ;
+; |kalkulator|fsm:TOFSM|cState~9             ; |kalkulator|fsm:TOFSM|cState~9             ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector14~1         ; |kalkulator|fsm:TOFSM|Selector14~1         ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector16~0         ; |kalkulator|fsm:TOFSM|Selector16~0         ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~1  ; |kalkulator|comparator:U_COMP|LessThan0~1  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~2  ; |kalkulator|comparator:U_COMP|LessThan0~2  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~4  ; |kalkulator|comparator:U_COMP|LessThan0~4  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~5  ; |kalkulator|comparator:U_COMP|LessThan0~5  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~6  ; |kalkulator|comparator:U_COMP|LessThan0~6  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~8  ; |kalkulator|comparator:U_COMP|LessThan0~8  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan0~12 ; |kalkulator|comparator:U_COMP|LessThan0~12 ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~4  ; |kalkulator|comparator:U_COMP|LessThan1~4  ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~9  ; |kalkulator|comparator:U_COMP|LessThan1~9  ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~6        ; |kalkulator|subtractor:X_SUB|Add0~6        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~7        ; |kalkulator|subtractor:X_SUB|Add0~7        ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~11       ; |kalkulator|subtractor:X_SUB|Add0~11       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add0~12       ; |kalkulator|subtractor:X_SUB|Add0~12       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Equal0~0      ; |kalkulator|subtractor:X_SUB|Equal0~0      ; out0             ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |kalkulator|rst                           ; |kalkulator|rst                           ; out              ;
+; |kalkulator|go_i                          ; |kalkulator|go_i                          ; out              ;
+; |kalkulator|x_i[0]                        ; |kalkulator|x_i[0]                        ; out              ;
+; |kalkulator|x_i[1]                        ; |kalkulator|x_i[1]                        ; out              ;
+; |kalkulator|x_i[2]                        ; |kalkulator|x_i[2]                        ; out              ;
+; |kalkulator|x_i[3]                        ; |kalkulator|x_i[3]                        ; out              ;
+; |kalkulator|y_i[0]                        ; |kalkulator|y_i[0]                        ; out              ;
+; |kalkulator|y_i[1]                        ; |kalkulator|y_i[1]                        ; out              ;
+; |kalkulator|y_i[2]                        ; |kalkulator|y_i[2]                        ; out              ;
+; |kalkulator|y_i[3]                        ; |kalkulator|y_i[3]                        ; out              ;
+; |kalkulator|d_o[0]                        ; |kalkulator|d_o[0]                        ; pin_out          ;
+; |kalkulator|d_o[1]                        ; |kalkulator|d_o[1]                        ; pin_out          ;
+; |kalkulator|d_o[2]                        ; |kalkulator|d_o[2]                        ; pin_out          ;
+; |kalkulator|d_o[3]                        ; |kalkulator|d_o[3]                        ; pin_out          ;
+; |kalkulator|regis:OUT_REG|output[3]       ; |kalkulator|regis:OUT_REG|output[3]       ; regout           ;
+; |kalkulator|regis:OUT_REG|output[2]       ; |kalkulator|regis:OUT_REG|output[2]       ; regout           ;
+; |kalkulator|regis:OUT_REG|output[1]       ; |kalkulator|regis:OUT_REG|output[1]       ; regout           ;
+; |kalkulator|regis:OUT_REG|output[0]       ; |kalkulator|regis:OUT_REG|output[0]       ; regout           ;
+; |kalkulator|regis:Y_REG|output[3]         ; |kalkulator|regis:Y_REG|output[3]         ; regout           ;
+; |kalkulator|regis:Y_REG|output[2]         ; |kalkulator|regis:Y_REG|output[2]         ; regout           ;
+; |kalkulator|regis:Y_REG|output[1]         ; |kalkulator|regis:Y_REG|output[1]         ; regout           ;
+; |kalkulator|mux:Y_MUX|output~1            ; |kalkulator|mux:Y_MUX|output~1            ; out              ;
+; |kalkulator|mux:Y_MUX|output~2            ; |kalkulator|mux:Y_MUX|output~2            ; out              ;
+; |kalkulator|mux:Y_MUX|output[2]           ; |kalkulator|mux:Y_MUX|output[2]           ; out              ;
+; |kalkulator|mux:Y_MUX|output[1]           ; |kalkulator|mux:Y_MUX|output[1]           ; out              ;
+; |kalkulator|fsm:TOFSM|cState.s5           ; |kalkulator|fsm:TOFSM|cState.s5           ; regout           ;
+; |kalkulator|fsm:TOFSM|nState.init_254     ; |kalkulator|fsm:TOFSM|nState.init_254     ; out              ;
+; |kalkulator|fsm:TOFSM|cState~1            ; |kalkulator|fsm:TOFSM|cState~1            ; out0             ;
+; |kalkulator|fsm:TOFSM|cState.init~0       ; |kalkulator|fsm:TOFSM|cState.init~0       ; out0             ;
+; |kalkulator|fsm:TOFSM|WideOr3~2           ; |kalkulator|fsm:TOFSM|WideOr3~2           ; out0             ;
+; |kalkulator|fsm:TOFSM|cState~9            ; |kalkulator|fsm:TOFSM|cState~9            ; out0             ;
+; |kalkulator|fsm:TOFSM|Selector16~0        ; |kalkulator|fsm:TOFSM|Selector16~0        ; out0             ;
+; |kalkulator|comparator:U_COMP|LessThan1~9 ; |kalkulator|comparator:U_COMP|LessThan1~9 ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~4       ; |kalkulator|subtractor:X_SUB|Add1~4       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~9       ; |kalkulator|subtractor:X_SUB|Add1~9       ; out0             ;
+; |kalkulator|subtractor:X_SUB|Add1~10      ; |kalkulator|subtractor:X_SUB|Add1~10      ; out0             ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Nov 12 00:38:08 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off kalkulator -c kalkulator
+Info: Using vector source file "D:/SISDIG/Prak 4/4D/kalkulator.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of kalkulator.vwf called kalkulator.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      71.20 %
+Info: Number of transitions in simulation is 5959
+Info: Vector file kalkulator.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 145 megabytes
+    Info: Processing ended: Sun Nov 12 00:38:08 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
