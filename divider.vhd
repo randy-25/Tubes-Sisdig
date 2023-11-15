@@ -3,17 +3,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity division_example is
-    Port ( dividend : in integer; --Multiplier
-           divisor : in integer; --GCD
-           quotient : out integer); --Hasil
-end division_example;
+entity divider is
+    Port ( multiplier : in integer;
+           GCD : in integer;
+           hasil : out integer);
+end divider;
 
-architecture Behavioral of division_example is
-    signal dividend_signed, divisor_signed : INTEGER;
-    signal quotient_real : REAL;
+architecture Behavioral of divider is
 begin
-    quotient_real <= REAL(dividend) / REAL(divisor);
-    -- Convert real numbers back to integers
-    quotient <= integer (quotient_real);
+    -- Melakukan pembagian dan mendapatkan hasil bagi (KPK) 
+    hasil <= multiplier mod GCD ;
 end Behavioral;
