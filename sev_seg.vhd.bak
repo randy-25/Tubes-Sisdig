@@ -1,0 +1,123 @@
+-- Library
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+-- Entity
+ENTITY sev_seg IS
+    PORT (
+        --Input
+        clk : IN STD_LOGIC;
+        --dataA, dataB, dataC, dataD : in STD_LOGIC_VECTOR (7 DOWNTO 0);
+		mode : in std_logic_vector(1 downto 0);
+        --Output
+        selector : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+        ss : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+    );
+END sev_seg;
+-- Architecture
+ARCHITECTURE behavior OF sev_seg IS
+    SIGNAL clk_counter : INTEGER := 0;
+    SIGNAL used_selector : INTEGER := 0;
+BEGIN
+    --Hubungan used_selector dengan selector
+    PROCESS (used_selector)
+    BEGIN
+        CASE used_selector IS
+            WHEN 0 => selector <= "0111"; --segmen paling kanan
+            WHEN 1 => selector <= "1011";
+            WHEN 2 => selector <= "1101";
+            WHEN 3 => selector <= "1110"; --segmen paling kiri
+            WHEN OTHERS => selector <= "1111";
+        END CASE;
+    END PROCESS;
+    -- Digit pada segmen
+    PROCESS (clk)
+    BEGIN
+        CASE used_selector IS
+            WHEN 0 =>
+                case mode is
+                    when "00" => ss <= "10001110";
+                    when "01" => ss <= "10001001";
+                    when "10" => ss <= "10001110";
+                    when others => ss <= "11111111";
+                end case;
+            WHEN 1 =>
+                case mode is
+                    when "00" => ss <= "10001100";
+                    when "01" => ss <= "10001100";
+                    when "10" => ss <= "11001000";
+                    when others => ss <= "11111111";
+                end case;  
+            WHEN 2 =>
+                case mode is
+                    when "00" => ss <= "100000000";
+                    when "01" => ss <= "10001001";
+                    when "10" => ss <= "10001001";
+                    when others => ss <= "11111111";
+                end case;
+            WHEN 3 =>
+                case mode is
+                    when "00" => ss <= "11111111";
+                    when "01" => ss <= "11111111";
+                    when "10" => ss <= "11111111";
+                    when others => ss <= "11111111";
+                end case;
+            WHEN OTHERS =>
+        END CASE;
+    END PROCESS;
+    --Counter untuk menampilkan 1 segmen pada suatu waktu
+    PROCESS (clk_counter, clk)
+    BEGIN
+        IF (rising_edge(clk)) THEN
+            clk_counter <= clk_counter + 1;
+            IF (clk_counter > 25000) THEN
+                clk_counter <= 0;
+                used_selector <= used_selector + 1;
+                IF used_selector > 3 THEN
+                    used_selector <= 0;
+                END IF;
+            END IF;
+        END IF;
+    END PROCESS;
+END behavior;
+
+
+-- ASCII
+--                     when "00110000" => ss <= "11000000";
+--                     when "00110001" => ss <= "11111001";
+--                     when "00110010" => ss <= "10100100";
+--                     when "00110011" => ss <= "10110000";
+--                     when "00110100" => ss <= "10011001";
+--                     when "00110101" => ss <= "10010010";
+--                     when "00110110" => ss <= "10000010";
+--                     when "00110111" => ss <= "11111000";
+--                     when "00111000" => ss <= "10000000";
+--                     when "00111001" => ss <= "10010000";
+
+--BCD
+--                     when "0000" => ss <= "11000000";
+--                     when "0001" => ss <= "11111001";
+--                     when "0010" => ss <= "10100100";
+--                     when "0011" => ss <= "10110000";
+--                     when "0100" => ss <= "10011001";
+--                     when "0101" => ss <= "10010010";
+--                     when "0110" => ss <= "10000010";
+--                     when "0111" => ss <= "11111000";
+--                     when "1000" => ss <= "10000000";
+--                     when "1001" => ss <= "10010000";
+--                     when others => ss <= "11111111";
+
+-- desimal
+-- case dataA is
+--     --     when "00000000" => ss <= "11000000";
+--     --     when "00000001" => ss <= "11111001";
+--     --     when "00000010" => ss <= "10100100";
+--     --     when "00000011" => ss <= "10110000";
+--     --     when "00000100" => ss <= "10011001";
+--     --     when "00000101" => ss <= "10010010";
+--     --     when "00000110" => ss <= "10000010";
+--     --     when "00000111" => ss <= "11111000";
+--     --     when "00001000" => ss <= "10000000";
+--     --     when "00001001" => ss <= "10010000";
+--     --     when "00001010" => ss <= "00000000";
+--     --     when others => ss <= dataA;
+--     -- end case;

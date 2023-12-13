@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.940 ns
-From           : x_i[2]
-To             : regis:X_REG|output[2]
+Actual Time    : 7.949 ns
+From           : rst_n
+To             : ASCII[2][1]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.101 ns
-From           : regis:OUT_REG|output[2]
-To             : d_o[2]
+Actual Time    : 8.783 ns
+From           : ASCII[4][2]
+To             : Seven_Segment[2]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.383 ns
-From           : rst
-To             : regis:Y_REG|output[1]
+Actual Time    : -3.815 ns
+From           : rs232_rx
+To             : my_uart_top:UART|my_uart_rx:receiver|rs232_rx0
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 83.36 MHz ( period = 11.996 ns )
-From           : fsm:TOFSM|yld
-To             : regis:Y_REG|output[3]
+Actual Time    : 24.38 MHz ( period = 41.018 ns )
+From           : kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|x_out[28]
+To             : my_uart_top:UART|my_uart_tx:transmitter|tx_data_i[0]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
@@ -46,11 +46,11 @@ Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : fsm:TOFSM|cState.s4
-To             : fsm:TOFSM|enable
+From           : kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|mux:initialYMUX|output_f[29]~reg0
+To             : kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|x_out[29]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 18
+Failed Paths   : 708
 
 Type           : Total number of failed paths
 Slack          : 
@@ -60,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 18
+Failed Paths   : 708
 
 --------------------------------------------------------------------------------------
 

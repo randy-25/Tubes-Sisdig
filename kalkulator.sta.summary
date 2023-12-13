@@ -1,0 +1,1265 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -34.718
+TNS   : -238.428
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -12.280
+TNS   : -341.800
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -11.801
+TNS   : -333.011
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -8.512
+TNS   : -232.695
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -8.373
+TNS   : -1941.775
+
+Type  : Slow 1200mV 85C Model Setup 'sev_seg:sevenseg|used_selector[0]'
+Slack : -7.572
+TNS   : -39.569
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -7.134
+TNS   : -227.872
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -6.907
+TNS   : -55.242
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -5.080
+TNS   : -48.225
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -5.026
+TNS   : -160.656
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -5.003
+TNS   : -39.985
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -4.990
+TNS   : -146.265
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -4.956
+TNS   : -153.682
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.898
+TNS   : -30.351
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.435
+TNS   : -104.093
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.167
+TNS   : -93.595
+
+Type  : Slow 1200mV 85C Model Setup 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : -3.133
+TNS   : -133.464
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.728
+TNS   : -35.804
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.318
+TNS   : -28.697
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.202
+TNS   : -26.929
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.115
+TNS   : -46.742
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.891
+TNS   : -31.794
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.690
+TNS   : -32.193
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.500
+TNS   : -30.288
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.255
+TNS   : -11.483
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.791
+TNS   : -7.513
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.115
+TNS   : -0.523
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.075
+TNS   : -0.193
+
+Type  : Slow 1200mV 85C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.073
+TNS   : -0.236
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -0.460
+TNS   : -7.546
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.084
+TNS   : -0.122
+
+Type  : Slow 1200mV 85C Model Hold 'sev_seg:sevenseg|used_selector[0]'
+Slack : -0.056
+TNS   : -0.056
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.029
+TNS   : -0.029
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.022
+TNS   : -0.031
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.054
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.908
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.910
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.931
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 1.003
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.011
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.200
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 1.204
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 1.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.723
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.823
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 2.143
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 3.286
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -3.652
+TNS   : -112.896
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -3.625
+TNS   : -111.731
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.335
+TNS   : -26.680
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.933
+TNS   : -83.041
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.888
+TNS   : -88.427
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -2.776
+TNS   : -28.974
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -2.547
+TNS   : -76.144
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.858
+TNS   : -57.344
+
+Type  : Slow 1200mV 85C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.444
+TNS   : -42.916
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.874
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : 2.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 2.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 2.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 2.785
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 3.224
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 3.573
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 3.581
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -1.487
+TNS   : -1292.203
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : -1.487
+TNS   : -93.681
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -44.610
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sev_seg:sevenseg|used_selector[0]'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : 9.647
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -32.797
+TNS   : -218.825
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -11.231
+TNS   : -313.858
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -10.801
+TNS   : -306.033
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -7.831
+TNS   : -215.302
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -7.784
+TNS   : -1842.044
+
+Type  : Slow 1200mV 0C Model Setup 'sev_seg:sevenseg|used_selector[0]'
+Slack : -7.168
+TNS   : -37.256
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -6.619
+TNS   : -211.568
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -6.434
+TNS   : -51.432
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -4.688
+TNS   : -149.952
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -4.681
+TNS   : -41.308
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -4.577
+TNS   : -141.562
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -4.559
+TNS   : -36.434
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -4.462
+TNS   : -135.190
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.538
+TNS   : -27.373
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.163
+TNS   : -95.686
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -2.816
+TNS   : -82.678
+
+Type  : Slow 1200mV 0C Model Setup 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : -2.701
+TNS   : -114.353
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.462
+TNS   : -28.598
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.077
+TNS   : -21.598
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.918
+TNS   : -19.798
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.873
+TNS   : -39.304
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.639
+TNS   : -24.627
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.453
+TNS   : -24.706
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.283
+TNS   : -23.070
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.141
+TNS   : -8.541
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.682
+TNS   : -4.758
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.037
+TNS   : -0.060
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Slow 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.021
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -0.356
+TNS   : -5.856
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.162
+TNS   : -0.386
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.117
+TNS   : -0.702
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.074
+TNS   : -0.100
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.068
+TNS   : -0.092
+
+Type  : Slow 1200mV 0C Model Hold 'sev_seg:sevenseg|used_selector[0]'
+Slack : -0.057
+TNS   : -0.057
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.579
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.751
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.756
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.813
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.847
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.859
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.044
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 1.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.261
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.494
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.527
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.845
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 2.940
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -3.385
+TNS   : -104.480
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -3.376
+TNS   : -103.409
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -3.046
+TNS   : -24.368
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.696
+TNS   : -75.986
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -2.631
+TNS   : -80.782
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -2.515
+TNS   : -26.053
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -2.308
+TNS   : -68.848
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.660
+TNS   : -51.202
+
+Type  : Slow 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.355
+TNS   : -39.954
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.213
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.615
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : 2.085
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 2.233
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 2.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 2.559
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 2.870
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 3.237
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 3.237
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -1.487
+TNS   : -1292.203
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : -1.487
+TNS   : -93.813
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.732
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -44.656
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sev_seg:sevenseg|used_selector[0]'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.572
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -14.292
+TNS   : -90.172
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -4.953
+TNS   : -135.638
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -4.769
+TNS   : -133.620
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -3.137
+TNS   : -83.038
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -3.104
+TNS   : -369.622
+
+Type  : Fast 1200mV 0C Model Setup 'sev_seg:sevenseg|used_selector[0]'
+Slack : -3.021
+TNS   : -15.621
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -2.554
+TNS   : -80.510
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -2.482
+TNS   : -19.834
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.750
+TNS   : -45.016
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -1.721
+TNS   : -9.379
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.683
+TNS   : -13.432
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.602
+TNS   : -48.756
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.558
+TNS   : -49.434
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.127
+TNS   : -8.949
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -0.923
+TNS   : -26.705
+
+Type  : Fast 1200mV 0C Model Setup 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : -0.839
+TNS   : -24.049
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -0.807
+TNS   : -23.165
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.723
+TNS   : -4.016
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.550
+TNS   : -2.080
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.475
+TNS   : -1.484
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.445
+TNS   : -5.554
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.408
+TNS   : -1.870
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.233
+TNS   : -0.402
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.153
+TNS   : -0.779
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -0.301
+TNS   : -5.836
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.205
+TNS   : -0.430
+
+Type  : Fast 1200mV 0C Model Hold 'sev_seg:sevenseg|used_selector[0]'
+Slack : -0.092
+TNS   : -0.262
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.059
+TNS   : -0.099
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.053
+TNS   : -0.138
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.032
+TNS   : -0.034
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.580
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 0.629
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.774
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.856
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.973
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.449
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.102
+TNS   : -32.472
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.073
+TNS   : -32.816
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.043
+TNS   : -8.344
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -0.704
+TNS   : -6.572
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.701
+TNS   : -17.527
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.657
+TNS   : -19.882
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -0.539
+TNS   : -14.848
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -0.278
+TNS   : -7.010
+
+Type  : Fast 1200mV 0C Model Recovery 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -0.103
+TNS   : -2.112
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.053
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : 1.086
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : 1.107
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.218
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : 1.469
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : 1.590
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : 1.620
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCKDIV:kalkuclock|div_cek'
+Slack : -1.000
+TNS   : -869.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'my_uart_top:UART|my_uart_tx:transmitter|sent_x'
+Slack : -1.000
+TNS   : -63.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -30.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX|div_cek'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sev_seg:sevenseg|used_selector[0]'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.410
+TNS   : 0.000
+
+------------------------------------------------------------

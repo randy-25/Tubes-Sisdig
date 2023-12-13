@@ -18,7 +18,7 @@
 #
 # Quartus II
 # Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-# Date created = 23:25:29  November 08, 2023
+# Date created = 13:45:47  November 26, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,25 +36,70 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name DEVICE EP2C20AF484A7
-set_global_assignment -name TOP_LEVEL_ENTITY kalkulator
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY uart
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:25:29  NOVEMBER 08, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:45:47  NOVEMBER 26, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
-set_global_assignment -name VHDL_FILE kalkulator.vhd
-set_global_assignment -name VHDL_FILE mux.vhd
-set_global_assignment -name VHDL_FILE comparator.vhd
-set_global_assignment -name VHDL_FILE register.vhd
-set_global_assignment -name VHDL_FILE subtractor.vhd
-set_global_assignment -name VHDL_FILE fsm.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+#set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.0V
+set_global_assignment -name LL_ROOT_REGION ON -entity kalkulator -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity kalkulator -section_id "Root Region"
+set_global_assignment -name MISC_FILE "D:/SISDIG/TUBES/FINISH_yg_ke_2/Finish3/kalkulator.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Kalkulator/kalkulator.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_23 -to clk
+set_location_assignment PIN_115 -to rs232_rx
+set_location_assignment PIN_114 -to rs232_tx
+set_location_assignment PIN_88 -to rst_n
+set_location_assignment PIN_133 -to Digit_SS[0]
+set_location_assignment PIN_135 -to Digit_SS[1]
+set_location_assignment PIN_136 -to Digit_SS[2]
+set_location_assignment PIN_137 -to Digit_SS[3]
+set_location_assignment PIN_127 -to Seven_Segment[7]
+set_location_assignment PIN_124 -to Seven_Segment[6]
+set_location_assignment PIN_126 -to Seven_Segment[5]
+set_location_assignment PIN_132 -to Seven_Segment[4]
+set_location_assignment PIN_129 -to Seven_Segment[3]
+set_location_assignment PIN_125 -to Seven_Segment[2]
+set_location_assignment PIN_121 -to Seven_Segment[1]
+set_location_assignment PIN_128 -to Seven_Segment[0]
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name VECTOR_WAVEFORM_FILE kalkulator.vwf
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name SDC_FILE kalkulator.sdc
+set_global_assignment -name VHDL_FILE sev_seg.vhd
+set_global_assignment -name VHDL_FILE UARTComponent/my_uart_rx.vhd
+set_global_assignment -name VHDL_FILE UARTComponent/my_uart_top.vhd
+set_global_assignment -name VHDL_FILE UARTComponent/my_uart_tx.vhd
+set_global_assignment -name VHDL_FILE UARTComponent/speed_select.vhd
+set_global_assignment -name VHDL_FILE CLOCKDIV.vhd
+set_global_assignment -name VHDL_FILE uart.vhd
+set_global_assignment -name VHDL_FILE ASCII_To_Binary/ascii_to_bcd.vhd
+set_global_assignment -name VHDL_FILE ASCII_To_Binary/bcd_to_ascii.vhd
+set_global_assignment -name VHDL_FILE ASCII_To_Binary/bcdtobinary8bit.vhd
+set_global_assignment -name VHDL_FILE ASCII_To_Binary/binarytobcd8bit.vhd
+set_global_assignment -name VHDL_FILE ASCII_To_Binary/binarytobcd32bit.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/adder.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/comparator.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/equal.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/fpb.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/fsm.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/kalkulator_top_level.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/kalkulatorFPB.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/kalkulatorKPK.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/kpk.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/mux.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/regis.vhd
+set_global_assignment -name VHDL_FILE Kalkulator/subtractor.vhd
+set_global_assignment -name CDF_FILE kalkulator.cdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Kalkulator/kalkulator.vwf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

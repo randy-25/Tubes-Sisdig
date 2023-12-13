@@ -1,10 +1,54 @@
 
-State Machine - |kalkulator|fsm:TOFSM|cState
-Name cState.s5 cState.s4 cState.s3 cState.s2 cState.s1 cState.s0 cState.init 
-cState.init 0 0 0 0 0 0 0 
-cState.s0 0 0 0 0 0 1 1 
-cState.s1 0 0 0 0 1 0 1 
-cState.s2 0 0 0 1 0 0 1 
-cState.s3 0 0 1 0 0 0 1 
-cState.s4 0 1 0 0 0 0 1 
-cState.s5 1 0 0 0 0 0 1 
+State Machine - |uart|kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|fsm:fsmControl|currentState
+Name currentState.x_equal currentState.x_less_than currentState.x_greater currentState.compare currentState.load currentState.init 
+currentState.init 0 0 0 0 0 0 
+currentState.load 0 0 0 0 1 1 
+currentState.compare 0 0 0 1 0 1 
+currentState.x_greater 0 0 1 0 0 1 
+currentState.x_less_than 0 1 0 0 0 1 
+currentState.x_equal 1 0 0 0 0 1 
+
+State Machine - |uart|kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|fsm:fsmControl|currentState
+Name currentState.x_equal currentState.x_less_than currentState.x_greater currentState.compare currentState.load currentState.init 
+currentState.init 0 0 0 0 0 0 
+currentState.load 0 0 0 0 1 1 
+currentState.compare 0 0 0 1 0 1 
+currentState.x_greater 0 0 1 0 0 1 
+currentState.x_less_than 0 1 0 0 0 1 
+currentState.x_equal 1 0 0 0 0 1 
+
+State Machine - |uart|kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|fsm:fsmControl|currentState
+Name currentState.x_equal currentState.x_less_than currentState.x_greater currentState.compare currentState.load currentState.init 
+currentState.init 0 0 0 0 0 0 
+currentState.load 0 0 0 0 1 1 
+currentState.compare 0 0 0 1 0 1 
+currentState.x_greater 0 0 1 0 0 1 
+currentState.x_less_than 0 1 0 0 0 1 
+currentState.x_equal 1 0 0 0 0 1 
+
+State Machine - |uart|kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|fsm:fsmControl|currentState
+Name currentState.x_equal currentState.x_less_than currentState.x_greater currentState.compare currentState.load currentState.init 
+currentState.init 0 0 0 0 0 0 
+currentState.load 0 0 0 0 1 1 
+currentState.compare 0 0 0 1 0 1 
+currentState.x_greater 0 0 1 0 0 1 
+currentState.x_less_than 0 1 0 0 0 1 
+currentState.x_equal 1 0 0 0 0 1 
+
+State Machine - |uart|kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|currentState
+Name currentState.x_equal currentState.x_less_than currentState.x_greater currentState.compare currentState.load currentState.init 
+currentState.init 0 0 0 0 0 0 
+currentState.load 0 0 0 0 1 1 
+currentState.compare 0 0 0 1 0 1 
+currentState.x_greater 0 0 1 0 0 1 
+currentState.x_less_than 0 1 0 0 0 1 
+currentState.x_equal 1 0 0 0 0 1 
+
+State Machine - |uart|kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|fsm:fsmControl|currentState
+Name currentState.x_equal currentState.x_less_than currentState.x_greater currentState.compare currentState.load currentState.init 
+currentState.init 0 0 0 0 0 0 
+currentState.load 0 0 0 0 1 1 
+currentState.compare 0 0 0 1 0 1 
+currentState.x_greater 0 0 1 0 0 1 
+currentState.x_less_than 0 1 0 0 0 1 
+currentState.x_equal 1 0 0 0 0 1 

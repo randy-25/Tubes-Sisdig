@@ -1,7 +1,7 @@
 Quartus II
 Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-11
-989
+12
+1086
 OFF
 OFF
 OFF
@@ -20,18 +20,18 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-mux
+my_uart_top
 # storage
-db|kalkulator.(2).cnf
-db|kalkulator.(2).cnf
+db|kalkulator.(1).cnf
+db|kalkulator.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-mux.vhd
-f9e87ac2a32fd1f948cceb9547b1c7db
+uartcomponent|my_uart_top.vhd
+594cdf7b0d1cb578b9cd8e3dd43a3a
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -44,22 +44,17 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # user_parameter {
- constraint(load)
-3 downto 0
+ constraint(send_data)
+7 downto 0
 PARAMETER_STRING
 USR
- constraint(result)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(output)
-3 downto 0
+ constraint(receive_data)
+7 downto 0
 PARAMETER_STRING
 USR
 }
 # hierarchies {
-mux:X_MUX
-mux:Y_MUX
+my_uart_top:UART
 }
 # lmf
 c:|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -68,7 +63,41 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-regis
+speed_select
+# storage
+db|kalkulator.(2).cnf
+db|kalkulator.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+uartcomponent|speed_select.vhd
+32cea0dcbe17b23598de6b917515baca
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+my_uart_top:UART|speed_select:speed_rx
+my_uart_top:UART|speed_select:speed_tx
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+my_uart_rx
 # storage
 db|kalkulator.(3).cnf
 db|kalkulator.(3).cnf
@@ -78,8 +107,8 @@ ON
 }
 # case_insensitive
 # source_file
-register.vhd
-339ba31c39ceb28c06f17387fe5853
+uartcomponent|my_uart_rx.vhd
+82cdeadc7fe1476e2f7f89ccf158c7a8
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -92,19 +121,344 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # user_parameter {
- constraint(input)
-3 downto 0
+ constraint(rx_data)
+7 downto 0
 PARAMETER_STRING
 USR
- constraint(output)
+}
+# hierarchies {
+my_uart_top:UART|my_uart_rx:receiver
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+my_uart_tx
+# storage
+db|kalkulator.(4).cnf
+db|kalkulator.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+uartcomponent|my_uart_tx.vhd
+b28644f04d373e94a189cbf363fc2f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(tx_data)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+my_uart_top:UART|my_uart_tx:transmitter
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ascii_to_bcd
+# storage
+db|kalkulator.(5).cnf
+db|kalkulator.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ascii_to_binary|ascii_to_bcd.vhd
+8a5d589c43f4cf34097fd585a2d4cf0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ascii)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd)
 3 downto 0
 PARAMETER_STRING
 USR
 }
 # hierarchies {
-regis:X_REG
-regis:Y_REG
-regis:OUT_REG
+ascii_to_bcd:CONV1
+ascii_to_bcd:CONV2
+ascii_to_bcd:CONV3
+ascii_to_bcd:CONV4
+ascii_to_bcd:CONV5
+ascii_to_bcd:CONV6
+ascii_to_bcd:CONV7
+ascii_to_bcd:CONV8
+ascii_to_bcd:CONV9
+ascii_to_bcd:CONV10
+ascii_to_bcd:CONV11
+ascii_to_bcd:CONV12
+ascii_to_bcd:CONV13
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+kalkulator_top_level
+# storage
+db|kalkulator.(7).cnf
+db|kalkulator.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|kalkulator_top_level.vhd
+96b3f7d13dffb21975669b3c0d9d485
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(mode)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(a_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(b_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(c_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(fpb_out)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(kpk_out)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+kalkulatorFPB
+# storage
+db|kalkulator.(8).cnf
+db|kalkulator.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|kalkulatorfpb.vhd
+44243e36805cc6055a8b38f8e14fcd3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(b_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(c_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_o)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+fpb
+# storage
+db|kalkulator.(9).cnf
+db|kalkulator.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|fpb.vhd
+354cf4932b1a92b624683415addaba2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(x_input)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(y_input)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_o)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+mux
+# storage
+db|kalkulator.(12).cnf
+db|kalkulator.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|mux.vhd
+1fff83510a924f714b1a227fffb263b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input_0)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(input_1)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(output_f)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|mux:initialXMUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|mux:initialYMUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|mux:X_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|mux:Y_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|mux:initialXMUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|mux:initialYMUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|mux:X_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|mux:Y_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|mux:initialXMUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|mux:initialYMUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|mux:X_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|mux:Y_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|mux:initialXMUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|mux:initialYMUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|mux:X_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|mux:Y_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|mux:initialXMUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|mux:initialYMUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|mux:X_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|mux:Y_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|mux:initialXMUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|mux:initialYMUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|mux:X_MUX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|mux:Y_MUX
 }
 # lmf
 c:|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -115,16 +469,16 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 comparator
 # storage
-db|kalkulator.(4).cnf
-db|kalkulator.(4).cnf
+db|kalkulator.(14).cnf
+db|kalkulator.(14).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-comparator.vhd
-74509411d275d1e61f7d319d497d14c6
+kalkulator|comparator.vhd
+652f30813f3fb47b99de2c1469b152f
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -137,21 +491,529 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # user_parameter {
- constraint(x)
-3 downto 0
+ constraint(x_in)
+31 downto 0
 PARAMETER_STRING
 USR
- constraint(y)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(output)
-1 downto 0
+ constraint(y_in)
+31 downto 0
 PARAMETER_STRING
 USR
 }
 # hierarchies {
-comparator:U_COMP
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|comparator:COMP
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|comparator:COMP
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|comparator:COMP
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|comparator:COMP
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|comparator:COMP
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|comparator:COMP
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+equal
+# storage
+db|kalkulator.(16).cnf
+db|kalkulator.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|equal.vhd
+d57d6180854e442614bdc595996983
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(x_in)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(y_in)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|equal:EQ
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|equal:EQ
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|equal:EQ
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|equal:EQ
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|equal:EQ
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|equal:EQ
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+kalkulatorKPK
+# storage
+db|kalkulator.(17).cnf
+db|kalkulator.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|kalkulatorkpk.vhd
+a3e62530b9ec0c877da6b4c5a9dac7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(b_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(c_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_i)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_o)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+kpk
+# storage
+db|kalkulator.(18).cnf
+db|kalkulator.(18).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|kpk.vhd
+13eb732f99ffd5e22192be62bbf7406a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(x_i)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(y_i)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_o)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+binarytobcd8bit
+# storage
+db|kalkulator.(20).cnf
+db|kalkulator.(20).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ascii_to_binary|binarytobcd8bit.vhd
+5374cf94239dc3ad16e2e26cffca564
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(bin)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd2)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd3)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+binarytobcd8bit:CONVFPB
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+binarytobcd32bit
+# storage
+db|kalkulator.(21).cnf
+db|kalkulator.(21).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ascii_to_binary|binarytobcd32bit.vhd
+b39c1837f9280b8657cfc491fe55011
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(bin)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd2)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd3)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd4)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd5)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd6)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd7)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd8)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd9)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(bcd10)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+binarytobcd32bit:CONVKPK
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+bcd_to_ascii
+# storage
+db|kalkulator.(22).cnf
+db|kalkulator.(22).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ascii_to_binary|bcd_to_ascii.vhd
+67e19588855eea5b91e9c374c29c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(bcd)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(ascii)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+bcd_to_ascii:CONVFPBBCD1
+bcd_to_ascii:CONVFPBBCD2
+bcd_to_ascii:CONVFPBBCD3
+bcd_to_ascii:CONVKPKBCD1
+bcd_to_ascii:CONVKPKBCD2
+bcd_to_ascii:CONVKPKBCD3
+bcd_to_ascii:CONVKPKBCD4
+bcd_to_ascii:CONVKPKBCD5
+bcd_to_ascii:CONVKPKBCD6
+bcd_to_ascii:CONVKPKBCD7
+bcd_to_ascii:CONVKPKBCD8
+bcd_to_ascii:CONVKPKBCD9
+bcd_to_ascii:CONVKPKBCD10
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+CLOCKDIV
+# storage
+db|kalkulator.(11).cnf
+db|kalkulator.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clockdiv.vhd
+57d34280a8ec6b3e3f3ea7cecad6a8e5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|fsm:fsmControl|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|fsm:fsmControl|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|fsm:fsmControl|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|fsm:fsmControl|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|fsm:fsmControl|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD|CLOCKDIV:clockX
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD|CLOCKDIV:clockX
+CLOCKDIV:kalkuclock
+CLOCKDIV:clockdivide
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+regis
+# storage
+db|kalkulator.(13).cnf
+db|kalkulator.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+kalkulator|regis.vhd
+842a1387e3b6b9bb84c0586ece3d28b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(x_in)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(x_out)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:X_REG
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:Y_REG
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|regis:out_GCD
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:X_REG
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:Y_REG
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|regis:out_GCD
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:X_REG
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:Y_REG
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|regis:out_GCD
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:X_REG
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:Y_REG
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|regis:out_GCD
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:X_REG
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:Y_REG
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|regis:out_GCD
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:X_REG
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:Y_REG
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|regis:out_GCD
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+bcdtobinary8bit
+# storage
+db|kalkulator.(6).cnf
+db|kalkulator.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ascii_to_binary|bcdtobinary8bit.vhd
+a372f2c99033b04bfca82b92b1d9bdbb
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(bcd_i)
+11 downto 0
+PARAMETER_STRING
+USR
+ constraint(bin_o)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+bcdtobinary8bit:BCDBIN1
+bcdtobinary8bit:BCDBIN2
+bcdtobinary8bit:BCDBIN3
+bcdtobinary8bit:BCDBIN4
 }
 # lmf
 c:|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -162,16 +1024,16 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 subtractor
 # storage
-db|kalkulator.(5).cnf
-db|kalkulator.(5).cnf
+db|kalkulator.(15).cnf
+db|kalkulator.(15).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-subtractor.vhd
-9e8ae1ecfc57678d4f565f709eeb67
+kalkulator|subtractor.vhd
+9c0beb6fd092669c3cca477a2e4beb
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -184,29 +1046,23 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # user_parameter {
- constraint(cmd)
-1 downto 0
+ constraint(x_i)
+31 downto 0
 PARAMETER_STRING
 USR
- constraint(x)
-3 downto 0
+ constraint(y_i)
+31 downto 0
 PARAMETER_STRING
 USR
- constraint(y)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(xout)
-3 downto 0
-PARAMETER_STRING
-USR
- constraint(yout)
-3 downto 0
+ constraint(d_out)
+31 downto 0
 PARAMETER_STRING
 USR
 }
 # hierarchies {
-subtractor:X_SUB
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|subtractor:SUB
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|subtractor:SUB
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|subtractor:SUB
 }
 # lmf
 c:|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -215,18 +1071,18 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-kalkulator
+adder
 # storage
-db|kalkulator.(0).cnf
-db|kalkulator.(0).cnf
+db|kalkulator.(19).cnf
+db|kalkulator.(19).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-kalkulator.vhd
-7af47fdd6dafa822577dd81cbbde94c
+kalkulator|adder.vhd
+8f7bc68659a913e0eda3257a299f21b
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -238,20 +1094,32 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# include_file {
-mux.vhd
-f9e87ac2a32fd1f948cceb9547b1c7db
-register.vhd
-339ba31c39ceb28c06f17387fe5853
-comparator.vhd
-74509411d275d1e61f7d319d497d14c6
-fsm.vhd
-34535f73322b1af45958f4113cc69955
-subtractor.vhd
-9e8ae1ecfc57678d4f565f709eeb67
+# user_parameter {
+ constraint(x_in)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(y_in)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(x_i)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(y_i)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_out)
+31 downto 0
+PARAMETER_STRING
+USR
 }
 # hierarchies {
-|
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|adder:ADD
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|adder:ADD
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|adder:ADD
 }
 # lmf
 c:|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -262,16 +1130,54 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 fsm
 # storage
-db|kalkulator.(1).cnf
-db|kalkulator.(1).cnf
+db|kalkulator.(10).cnf
+db|kalkulator.(10).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-fsm.vhd
-34535f73322b1af45958f4113cc69955
+kalkulator|fsm.vhd
+f37c33dc5ca65b43a348c5e9327eb9b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc1|fsm:fsmControl
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc2|fsm:fsmControl
+kalkulator_top_level:KALKULATOR|kalkulatorFPB:fpb|fpb:proc3|fsm:fsmControl
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc1|fsm:fsmControl
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc2|fsm:fsmControl
+kalkulator_top_level:KALKULATOR|kalkulatorKPK:kpk|kpk:proc3|fsm:fsmControl
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+sev_seg
+# storage
+db|kalkulator.(23).cnf
+db|kalkulator.(23).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sev_seg.vhd
+5bc42dd75d2eba5a951842143911897a
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -284,13 +1190,94 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # user_parameter {
- constraint(comparison)
+ constraint(mode)
 1 downto 0
+PARAMETER_STRING
+USR
+ constraint(selector)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(ss)
+7 downto 0
 PARAMETER_STRING
 USR
 }
 # hierarchies {
-fsm:TOFSM
+sev_seg:sevenseg
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+sev_seg
+# storage
+db|kalkulator.(24).cnf
+db|kalkulator.(24).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sev_seg.vhd
+5bc42dd75d2eba5a951842143911897a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(selector)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(ss)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+c:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+uart
+# storage
+db|kalkulator.(0).cnf
+db|kalkulator.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+uart.vhd
+9d45ae4c2ddd9143dd63b8e8d67e54b1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
 }
 # lmf
 c:|altera|91sp2|quartus|lmf|maxplus2.lmf
